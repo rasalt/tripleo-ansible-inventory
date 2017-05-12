@@ -1,0 +1,23 @@
+---
+# ip a on controller/compute/ceph-storage 
+- name: List ip a 
+  hosts: control
+  become: true
+  tasks:
+    - name: List controller ips
+      shell: ip a 
+      ignore_errors: true
+# ip a on controller/compute/ceph-storage 
+- name: List ip a 
+  hosts: compute
+  become: true
+  tasks:
+    - name: List compute ips
+      shell: ip a 
+# ip a on controller/compute/ceph-storage 
+- name: List ip a 
+  hosts: ceph-storage
+  become: true
+  tasks:
+    - name: List ceph ips
+      shell: ip a 
