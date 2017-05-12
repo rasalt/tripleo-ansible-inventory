@@ -1,0 +1,1 @@
+# tripleo-ansible-inventory
